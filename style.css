@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+nav{
+    background-color: rgb(32, 26, 26);
+    color:#fff;
+    padding: 20px;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+
+}
+.nav{
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+a:hover{
+    color:rgb(206, 196, 196);
+}
+li{
+    list-style: none;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: solid 2px black;
+    border-radius: 50%;
+    transition:0.4s ease ;
+    cursor: pointer;
+}
+img:hover{
+    width:400px;
+    height:400px;
+    border-radius: 0px;
+
+
+}
+.container{
+    margin-top:160px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.main-section{
+    width:800px;
+   
+}
+h1{
+    display: inline;
+}
+body{
+    font-family: sans-serif;
+}
+.heading{
+    margin-bottom: 40px;
+}
+.text{
+    margin-bottom:40px;
+}
+button{
+    background-color: rgb(243, 144, 160);
+    padding:5px;
+    width:40%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover{
+    background-color: pink;
+}
+div{
+    font-size: 1.5rem;
+}
+button{
+    font-size:1.3rem;
+}
+a{
+    font-size:1.2rem;
+}
+span{
+    display: inline-block;
+    display: flex;
+    gap:30px;
+}
+.icons{
+    display: none;
+}
+.none{
+    display: none;
+}
+
+
+@media (max-width:600px) {
+   .navbar{
+    
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right:0;
+    left:0;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: 000;
+    transition: top 1s ease;
+    color: whitesmoke  ;
+    background-color: black;
+    display: none;
+   
+   }
+
+   .open-menu{
+    color: white;
+    display:block;
+    position: absolute;
+    top:25px;
+    right:20px;
+   }
+   
+   .close{
+    color: white;
+   }
+   .container{
+    margin-top: 30px;
+   }
+  .heading{
+    display: contents;
+  }
+  .close{
+    display: contents;
+  }
+  button{
+    display: none;
+  }
+  img{
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    border: solid 2px black;
+    border-radius: 50%;
+    transition:0.4s ease ;
+    cursor: pointer;
+    
+  }
+  .main-section{
+    margin-top:10% ;
+    margin-left: 10%;
+   width: 100%;
+  }
+  .heading{
+    font-size: 1rem;
+  }
+  .text{
+    
+    width: 50%;
+    
+  }
+  .container{
+  
+   display:inline-block ;
+}
+
+
+  
+
+}
